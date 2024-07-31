@@ -1,5 +1,5 @@
 <?php
-	require_once "../classes/conexao.php";
+	require_once "classes/conexao.php";
 	$obj = new conectar();
 	$conexao = $obj->conexao();
 
@@ -18,9 +18,9 @@
 <html>
 <head>
 	<title>Registrar Usuário</title>
-	<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.css">
-	<script src="../libs/jquery-3.2.1.min.js"></script>
-	<script src="../js/funcoes.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<script src="js/funcoes.js"></script>
 	
 
 </head>
@@ -74,7 +74,7 @@
 			$.ajax({
 				type:"POST",
 				data:dados,
-				url:"../procedimentos/login/registrarUsuario.php",
+				url:"procedimentos/login/registrarUsuario.php",
 				success:function(r){
 					//alert(r);
 
